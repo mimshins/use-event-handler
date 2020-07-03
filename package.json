@@ -39,8 +39,7 @@
     "build": "microbundle -o lib/dist/ --sourcemap false",
     "lint": "eslint lib",
     "release": "npm publish --tag latest",
-    "prebuild": "yarn lint && rimraf dist",
-    "prerelease": "yarn build"
+    "prebuild": "yarn lint && rimraf dist"
   },
   "publishConfig": {
     "access": "public"
