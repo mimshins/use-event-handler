@@ -1,0 +1,84 @@
+{
+  "main": "lib/dist/index.js",
+  "source": "lib/src/index.js",
+  "module": "lib/dist/index.esm.js",
+  "esmodule": "lib/dist/index.es.js",
+  "umd:main": "lib/dist/umd/library.umd.min.js",
+  "name": "use-event-handler",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mostafa Shamsitabar",
+    "email": "mostafa.sh.coderino@gmail.com"
+  },
+  "description": "Library description",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "hooks",
+    "react hooks",
+    "eventlistener",
+    "use event listener",
+    "use event handler",
+    "event listener",
+    "event-listener",
+    "event hook",
+    "event listener hook",
+    "eventListener hook",
+    "react eventListener hook",
+    "react event listener hook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mimshins/use-event-handler.git"
+  },
+  "scripts": {
+    "dev": "microbundle watch -o lib/dist/ --compress false",
+    "build": "microbundle -o lib/dist/ --sourcemap false",
+    "lint": "eslint lib",
+    "release": "npm publish dist --tag latest",
+    "prebuild": "yarn lint && rimraf dist",
+    "prerelease": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "latest",
+    "prop-types": "latest"
+  },
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@babel/plugin-proposal-class-properties": "latest",
+    "@babel/plugin-proposal-object-rest-spread": "latest",
+    "@babel/plugin-transform-object-assign": "latest",
+    "@babel/plugin-transform-runtime": "latest",
+    "microbundle": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "rimraf": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  },
+  "browserslist": {
+    "production": [
+      "cover 95%",
+      "last 4 versions",
+      "not ie <= 9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
