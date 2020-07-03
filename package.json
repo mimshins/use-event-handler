@@ -5,7 +5,7 @@
   "esmodule": "lib/dist/use-event-handler.es.js",
   "umd:main": "lib/dist/use-event-handler.umd.min.js",
   "name": "use-event-handler",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Mostafa Shamsitabar",
     "email": "mostafa.sh.coderino@gmail.com"
