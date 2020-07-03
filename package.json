@@ -1,6 +1,6 @@
 {
   "main": "lib/dist/use-event-handler.js",
-  "source": "lib/src/use-event-handler.js",
+  "source": "lib/src/index.js",
   "module": "lib/dist/use-event-handler.esm.js",
   "esmodule": "lib/dist/use-event-handler.es.js",
   "umd:main": "lib/dist/use-event-handler.umd.min.js",
@@ -39,7 +39,8 @@
     "build": "microbundle -o lib/dist/ --sourcemap false",
     "lint": "eslint lib",
     "release": "npm publish --tag latest",
-    "prebuild": "yarn lint && rimraf dist"
+    "prebuild": "yarn lint && rimraf lib/dist",
+    "prerelease": "yarn build"
   },
   "publishConfig": {
     "access": "public"
