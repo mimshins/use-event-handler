@@ -10,7 +10,7 @@
     "name": "Mostafa Shamsitabar",
     "email": "mostafa.sh.coderino@gmail.com"
   },
-  "description": "Library description",
+  "description": "A custom React Hook that handles binding and unbinding event listeners in a smart way.",
   "license": "MIT",
   "files": [
     "dist"
@@ -38,7 +38,7 @@
     "dev": "microbundle watch -o lib/dist/ --compress false",
     "build": "microbundle -o lib/dist/ --sourcemap false",
     "lint": "eslint lib",
-    "release": "npm publish dist --tag latest",
+    "release": "npm publish --tag latest",
     "prebuild": "yarn lint && rimraf dist",
     "prerelease": "yarn build"
   },
