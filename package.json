@@ -1,9 +1,9 @@
 {
-  "main": "lib/dist/index.js",
-  "source": "lib/src/index.js",
-  "module": "lib/dist/index.esm.js",
-  "esmodule": "lib/dist/index.es.js",
-  "umd:main": "lib/dist/umd/library.umd.min.js",
+  "main": "lib/dist/use-event-handler.js",
+  "source": "lib/src/use-event-handler.js",
+  "module": "lib/dist/use-event-handler.esm.js",
+  "esmodule": "lib/dist/use-event-handler.es.js",
+  "umd:main": "lib/dist/use-event-handler.umd.min.js",
   "name": "use-event-handler",
   "version": "1.0.0",
   "author": {
@@ -46,25 +46,20 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
-  "dependencies": {
-    "@babel/runtime": "latest",
-    "prop-types": "latest"
+    "react": "^16.8.0"
   },
   "devDependencies": {
     "@babel/cli": "latest",
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@babel/preset-react": "latest",
-    "@babel/plugin-proposal-class-properties": "latest",
-    "@babel/plugin-proposal-object-rest-spread": "latest",
-    "@babel/plugin-transform-object-assign": "latest",
-    "@babel/plugin-transform-runtime": "latest",
+    "eslint": "^7.3.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.5",
     "microbundle": "latest",
+    "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest",
     "rimraf": "latest",
     "webpack": "latest",
     "webpack-cli": "latest"
