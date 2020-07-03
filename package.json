@@ -13,7 +13,7 @@
   "description": "A custom React Hook that handles binding and unbinding event listeners in a smart way.",
   "license": "MIT",
   "files": [
-    "dist"
+    "lib/dist"
   ],
   "keywords": [
     "react",
